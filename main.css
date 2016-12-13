@@ -99,18 +99,22 @@ img {
 #logo {
     text-align: left;
 }
+
 #contacts {
     float: right;
 }
+
 #contacts .social-media, #phoneNumber {
     text-align: right;
     padding-right: 0;
 }
+
 #phoneNumber {
     font-size: 2em;
     position: relative;
     bottom: 5px;
 }
+
 #phoneNumber img {
     height: 30px;
     width: 30px;
@@ -118,10 +122,21 @@ img {
     top: 5px;
     right: 10px;
 }
+
 .social-media img {
     height: 45px;
     width: 45px;
     margin: 0 0 0 5px;
+}
+.nav-divider {
+    height: 3px;
+    background: #ffffff;
+}
+.nav-divider:first-child {
+    float: left;
+}
+.nav-divider:last-child {
+    float: right;
 }
 
 #genderNav li, #seasonsNav li {
