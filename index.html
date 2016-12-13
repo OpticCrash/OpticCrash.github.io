@@ -2,70 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Digital Rush</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <!--[if lte IE 9]>
-        <script>
-            document.createElement("nav");
-            document.createElement("header");
-        </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <title>Shoes Shop</title>
 </head>
 <body>
-    <header id="header" class="text-center">
-        <div class="container">
-            <a href="#" id="logo"><img src="img/logo.png" alt="logo"></a>
-            <div id="menuTrigger">
-                <span class="divider"></span>
-                <span class="divider"></span>
-                <span class="divider"></span>
+    <div id="header" class="container-fluid">
+        <div class="row">
+            <div class="cols col-3" id="logo"><img src="http://placehold.it/150x65" alt=""></div>
+            <div class="cols col-5" id="contacts">
+                <div class="cols col-8" id="phoneNumber"><img src="img/telephone.png" alt="telephone">880-55-35-35</div>
+                <div class="social-media cols col-4">
+                    <a href="" ><img src="img/vk.png" alt="vkontakte"></a>
+                    <a href=""><img src="img/insta.png" alt="instagram"></a>
+                </div>
             </div>
-            <nav id="menu">
+        </div>
+        <div class="row">
+            <nav class="cols col-12 uppercase" id="genderNav">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Для мужчин</a></li>
+                    <li><a href="#">Для женщин</a></li>
+                </ul>
+            </nav>
+            <nav class="cols col-12 uppercase" id="seasonsNav">
+                <ul>
+                    <li><a href="#">Зима</a></li>
+                    <li><a href="#">Весна</a></li>
+                    <li><a href="#">Лето</a></li>
+                    <li><a href="#">Осень</a></li>
+                    <li><a href="#">Демисезон</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-    <div id="mySlider">
-        <div class="container slider-for">
-            <div class="sl__slide"><img src="img/sl1.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl2.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl3.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl4.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl5.jpg" alt="" class="sl__img"></div>
-        </div>
-        <div class="container slider-nav">
-            <div class="sl__slide"><img src="img/sl1.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl2.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl3.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl4.jpg" alt="" class="sl__img"></div>
-            <div class="sl__slide"><img src="img/sl5.jpg" alt="" class="sl__img"></div>
         </div>
     </div>
-    <footer id="footer" class="text-center">
-        <div class="container">
-            <nav id="contacts">
-                <ul>
-                    <li><a href="#"><img src="img/vk.png" alt="Vkontakte"></a></li>
-                    <li><a href="#"><img src="img/github-logo.png" alt="GitHub"></a></li>
-                    <li><a href="#"><img src="img/google-plus.png" alt="Google"></a></li>
-                </ul>
-            </nav>
-            <p id="copyright">
-                &copy; 2016 Shyrokyh Ivan
-            </p>
-        </div>
-    </footer>
-
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <script>document.jQuery || document.write(("<script src='js/jquery-1.11.1.min.js'>\x3C/script>"))</script>
-    <script src="slick/slick.min.js"></script>
-    <script src="js/large-screen-slider.js"></script>
 </body>
 </html>

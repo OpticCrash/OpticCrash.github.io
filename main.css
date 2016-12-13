@@ -1,0 +1,153 @@
+/* Base styles */
+body {
+    font: 100%/1.5em "MyriadProRegular", "Arial", "sans-serif";
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("fonts/MyriadProRegular.eot");
+    src: url("fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/MyriadProRegular.woff") format("woff"),
+    url("fonts/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Flexible media */
+article, aside, details, figcaption, figure, footer, hgroup, menu, nav, section {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grid */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+}
+.container, .container-fluid {
+    background: #84BD00;
+}
+.container .cols, .container-fluid .cols {
+    float: left;
+    margin: 0.5em 0;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.cols.col-1 {  width: 8.33%;  }
+.cols.col-2 {  width: 16.66%;  }
+.cols.col-3 {  width: 25%;  }
+.cols.col-4 {  width: 33.3%;  }
+.cols.col-5 {  width: 41.66%;  }
+.cols.col-6 {  width: 50%;  }
+.cols.col-7 {  width: 58.33%;  }
+.cols.col-8 {  width: 66.66%;  }
+.cols.col-9 {  width: 75%;  }
+.cols.col-10 {  width: 83.33%;  }
+.cols.col-11 { width: 91.66%; }
+.cols.col-12 { width: 100%; }
+
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.row:after,
+.clear:after {
+    clear: both;
+}
+
+/* Helper classes */
+.uppercase {
+    text-transform: uppercase;;
+}
+
+/* Header */
+#logo {
+    text-align: left;
+}
+#contacts {
+    float: right;
+}
+#contacts .social-media, #phoneNumber {
+    text-align: right;
+    padding-right: 0;
+}
+#phoneNumber {
+    font-size: 2em;
+    position: relative;
+    bottom: 5px;
+}
+#phoneNumber img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+.social-media img {
+    height: 45px;
+    width: 45px;
+    margin: 0 0 0 5px;
+}
+
+#genderNav li, #seasonsNav li {
+    display: inline-block;
+}
+#genderNav a, #seasonsNav a {
+    padding: 5px 15px;
+    margin: 0 5px;
+}
+
+#genderNav a {
+    font-size: 1.5em;
+}
+#genderNav a:hover {
+    color: #ffeb3c;
+}
+
+#seasonsNav a {
+    display: inline-block;
+    min-width: 100px;
+}
+#seasonsNav a:hover {
+    background: #ffeb3c;
+    color: #000000;
+    border-radius: 20% 50%;
+    -webkit-border-radius: 20% 50%;
+    -moz-border-radius: 20% 50%;
+}
+
