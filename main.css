@@ -49,13 +49,10 @@ img {
 .container-fluid {
     width: 100%;
 }
-.container, .container-fluid {
-    background: #84BD00;
-}
+
 .container .cols, .container-fluid .cols {
     float: left;
     margin: 0.5em 0;
-    padding: 0 1em;
     text-align: center;
 }
 
@@ -96,13 +93,11 @@ img {
 }
 
 /* Header */
-#logo {
-    text-align: left;
-}
+#header { background: #84bd00; }
 
-#contacts {
-    float: right;
-}
+#logo {  text-align: left;  }
+
+#contacts {  float: right;  }
 
 #contacts .social-media, #phoneNumber {
     text-align: right;
@@ -128,15 +123,22 @@ img {
     width: 45px;
     margin: 0 0 0 5px;
 }
-.nav-divider {
-    height: 3px;
+
+#genderNav:before {
+    content: " ";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    top: 12px;
     background: #ffffff;
 }
-.nav-divider:first-child {
-    float: left;
-}
-.nav-divider:last-child {
-    float: right;
+
+#genderNav ul {
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    background: #84bd00;
 }
 
 #genderNav li, #seasonsNav li {
@@ -144,20 +146,20 @@ img {
 }
 #genderNav a, #seasonsNav a {
     padding: 5px 15px;
-    margin: 0 5px;
 }
+
+#genderNav li:first-child a {  padding-right: 0;  margin-right: 10px; }
+#genderNav li:last-child a {  padding-left: 0;  margin-left: 10px; }
+
 
 #genderNav a {
     font-size: 1.5em;
+    word-spacing: 4px;
+    letter-spacing: 5px;
 }
-#genderNav a:hover {
-    color: #ffeb3c;
-}
+#genderNav a:hover {  color: #ffeb3c;  }
 
-#seasonsNav a {
-    display: inline-block;
-    min-width: 100px;
-}
+#seasonsNav a {  display: inline-block;  min-width: 100px;  }
 #seasonsNav a:hover {
     background: #ffeb3c;
     color: #000000;
@@ -166,3 +168,50 @@ img {
     -moz-border-radius: 20% 50%;
 }
 
+/* Products section */
+#products .product-row .product:first-child {
+    margin-left: 0;
+}
+#products .product-row .product:last-child {
+    margin-right: 0;
+}
+
+#products .product {
+    height: 300px;
+    width: 23%;
+    margin: 20px 10px 0;
+    border: 2px solid #f5f5f5;
+}
+
+.product .product-thumbnail {
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+
+.product .product-thumbnail img {
+    position: absolute;
+    display: block;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.product .row {
+    background: #fff066;
+}
+
+.product .price {
+    float: right;
+    color: #000000;
+    font-size: 1.5em;
+}
+
+.product .brand {
+    max-height: 25px;
+    float: left;
+    position: relative;
+    left: 5px;
+}
